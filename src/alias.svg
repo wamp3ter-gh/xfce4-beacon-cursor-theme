@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- two chain links, no pointer; hotspot at the centre where they overlap.
+       Each link is drawn whole (rings, then fill) so the second crosses over the first. -->
+  <g fill="none" transform="rotate(-45 16 16)">
+    <rect x="2.5" y="11" width="15" height="10" rx="5" stroke="@OUTER@" stroke-width="{2.5+O}"/>
+    <rect x="2.5" y="11" width="15" height="10" rx="5" stroke="@INNER@" stroke-width="{2.5+I}"/>
+    <rect x="2.5" y="11" width="15" height="10" rx="5" stroke="@FILL@" stroke-width="2.5"/>
+    <rect x="14.5" y="11" width="15" height="10" rx="5" stroke="@OUTER@" stroke-width="{2.5+O}"/>
+    <rect x="14.5" y="11" width="15" height="10" rx="5" stroke="@INNER@" stroke-width="{2.5+I}"/>
+    <rect x="14.5" y="11" width="15" height="10" rx="5" stroke="@FILL@" stroke-width="2.5"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- arcade claw, prongs open, tips turned in horizontally.
+       Line art: @OUTER@ and @INNER@ rings around a @FILL@ stroke 3 wide. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 3 V11 M16 11 C9.5 11 5 16.5 5 25 H9.5 M16 11 C22.5 11 27 16.5 27 25 H22.5" stroke="@OUTER@" stroke-width="{3+O}"/>
+    <path d="M16 3 V11 M16 11 C9.5 11 5 16.5 5 25 H9.5 M16 11 C22.5 11 27 16.5 27 25 H22.5" stroke="@INNER@" stroke-width="{3+I}"/>
+    <path d="M16 3 V11 M16 11 C9.5 11 5 16.5 5 25 H9.5 M16 11 C22.5 11 27 16.5 27 25 H22.5" stroke="@FILL@" stroke-width="3"/>
+  </g>
+</svg>

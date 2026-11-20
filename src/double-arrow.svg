@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- horizontal double arrow, rotated by @ROT@ degrees for the other resize directions -->
+  <g transform="rotate(@ROT@ 16 16)">
+    <path d="M3 16 L10 9 V13 H22 V9 L29 16 L22 23 V19 H10 V23 Z"
+          fill="none" stroke="@OUTER@" stroke-width="{O}" stroke-linejoin="round"/>
+    <path d="M3 16 L10 9 V13 H22 V9 L29 16 L22 23 V19 H10 V23 Z"
+          fill="@FILL@" stroke="@INNER@" stroke-width="{I}" stroke-linejoin="round"/>
+  </g>
+</svg>

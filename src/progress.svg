@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- arrow plus a spinner badge; the dark arc turns by @SPIN@ each frame -->
+  <path d="M4 3 L4 25 L9.5 20 L13 28 L16.5 26.5 L13 18.5 L20.5 18.5 Z"
+        fill="none" stroke="@OUTER@" stroke-width="{O}" stroke-linejoin="round"/>
+  <path d="M4 3 L4 25 L9.5 20 L13 28 L16.5 26.5 L13 18.5 L20.5 18.5 Z"
+        fill="@FILL@" stroke="@INNER@" stroke-width="{I}" stroke-linejoin="round"/>
+  <circle cx="23" cy="23" r="7" fill="none" stroke="@OUTER@" stroke-width="{O}"/>
+  <circle cx="23" cy="23" r="7" fill="@FILL@" stroke="@INNER@" stroke-width="{I}"/>
+  <path transform="rotate(@SPIN@ 23 23)" d="M27.5 23 A4.5 4.5 0 1 1 23 18.5"
+        fill="none" stroke="@OUTER@" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- two stacked documents, no pointer; hotspot at the centre.
+       The back page is drawn whole first, then the front page with its rings cuts across it. -->
+  <rect x="4" y="3" width="15" height="19" rx="2" fill="none" stroke="@OUTER@" stroke-width="{O}"/>
+  <rect x="4" y="3" width="15" height="19" rx="2" fill="@FILL@" stroke="@INNER@" stroke-width="{I}"/>
+  <rect x="13" y="10" width="15" height="19" rx="2" fill="none" stroke="@OUTER@" stroke-width="{4+O}"/>
+  <rect x="13" y="10" width="15" height="19" rx="2" fill="@FILL@" stroke="@INNER@" stroke-width="{I}"/>
+  <path d="M16.5 15.5 H24.5 M16.5 19.5 H24.5 M16.5 23.5 H22" fill="none" stroke="@OUTER@" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

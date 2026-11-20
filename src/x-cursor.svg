@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- bold X. Line art: @OUTER@ and @INNER@ rings around a @FILL@ stroke 5 wide. -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M8 8 L24 24 M24 8 L8 24" stroke="@OUTER@" stroke-width="{5+O}"/>
+    <path d="M8 8 L24 24 M24 8 L8 24" stroke="@INNER@" stroke-width="{5+I}"/>
+    <path d="M8 8 L24 24 M24 8 L8 24" stroke="@FILL@" stroke-width="5"/>
+  </g>
+</svg>

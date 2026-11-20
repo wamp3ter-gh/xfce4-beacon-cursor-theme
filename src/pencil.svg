@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- pencil, tip at the bottom left; drawn upright then turned 45 degrees, so the tip
+       (16,29) lands near (6.8,25.2). Eraser band and lead in @OUTER@. -->
+  <g transform="rotate(45 16 16)" stroke-linejoin="round">
+    <path d="M12.5 2 H19.5 V22 L16 29 L12.5 22 Z" fill="none" stroke="@OUTER@" stroke-width="{O}"/>
+    <path d="M12.5 2 H19.5 V22 L16 29 L12.5 22 Z" fill="@FILL@" stroke="@INNER@" stroke-width="{I}"/>
+    <path d="M12.5 7 H19.5 M12.5 22 H19.5" fill="none" stroke="@OUTER@" stroke-width="1.5"/>
+    <path d="M14.6 25.8 L16 29 L17.4 25.8 Z" fill="@OUTER@"/>
+  </g>
+</svg>

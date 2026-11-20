@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- leaf: pointed corner at the arrow's hotspot (4,3), round body, big ? inside -->
+  <path d="M4 3 H17 A13 13 0 1 1 4 16 Z"
+        fill="none" stroke="@OUTER@" stroke-width="{O}" stroke-linejoin="round"/>
+  <path d="M4 3 H17 A13 13 0 1 1 4 16 Z"
+        fill="@FILL@" stroke="@INNER@" stroke-width="{I}" stroke-linejoin="round"/>
+  <path d="M12.5 12 C12.5 6.5 21.5 6.5 21.5 12 C21.5 15.5 17 15.5 17 19.5"
+        fill="none" stroke="@OUTER@" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="17" cy="24" r="2" fill="@OUTER@"/>
+</svg>

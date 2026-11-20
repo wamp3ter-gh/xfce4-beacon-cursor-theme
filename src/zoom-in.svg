@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- magnifier: handle (line art 5) under a filled lens, + inside -->
+  <g stroke-linecap="round">
+    <path d="M20 20 L27 27" fill="none" stroke="@OUTER@" stroke-width="{5+O}"/>
+    <path d="M20 20 L27 27" fill="none" stroke="@INNER@" stroke-width="{5+I}"/>
+    <path d="M20 20 L27 27" fill="none" stroke="@FILL@" stroke-width="5"/>
+  </g>
+  <circle cx="13" cy="13" r="9" fill="none" stroke="@OUTER@" stroke-width="{O}"/>
+  <circle cx="13" cy="13" r="9" fill="@FILL@" stroke="@INNER@" stroke-width="{I}"/>
+  <path d="M9 13 H17 M13 9 V17" fill="none" stroke="@OUTER@" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

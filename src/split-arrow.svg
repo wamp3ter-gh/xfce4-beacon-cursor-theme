@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- two arrows pushing away from a divider, with a clear gap on each side; drawn for
+       col-resize, rotated by @ROT@ for row-resize. Each part is drawn whole (rings, then fill). -->
+  <g transform="rotate(@ROT@ 16 16)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 5 V27" fill="none" stroke="@OUTER@" stroke-width="{2.5+O}"/>
+    <path d="M16 5 V27" fill="none" stroke="@INNER@" stroke-width="{2.5+I}"/>
+    <path d="M16 5 V27" fill="none" stroke="@FILL@" stroke-width="2.5"/>
+    <path d="M2.5 16 L8.5 10 V13.5 H11 V18.5 H8.5 V22 Z M29.5 16 L23.5 10 V13.5 H21 V18.5 H23.5 V22 Z" fill="none" stroke="@OUTER@" stroke-width="{O}"/>
+    <path d="M2.5 16 L8.5 10 V13.5 H11 V18.5 H8.5 V22 Z M29.5 16 L23.5 10 V13.5 H21 V18.5 H23.5 V22 Z" fill="@FILL@" stroke="@INNER@" stroke-width="{I}"/>
+  </g>
+</svg>

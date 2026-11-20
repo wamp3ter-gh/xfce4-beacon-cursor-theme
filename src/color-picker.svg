@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- eyedropper (color-picker), tip at the bottom left; drawn upright then turned 45 degrees,
+       so the tip (16,29) lands near (6.8,25.2). Bulb in @OUTER@, tube in @FILL@. -->
+  <g transform="rotate(45 16 16)" stroke-linejoin="round">
+    <rect x="12" y="1.5" width="8" height="8" rx="4" fill="@OUTER@" stroke="@OUTER@" stroke-width="{O}"/>
+    <rect x="10.5" y="9.5" width="11" height="3" rx="1" fill="none" stroke="@OUTER@" stroke-width="{O}"/>
+    <path d="M13.5 12.5 H18.5 V23 L16 29 L13.5 23 Z" fill="none" stroke="@OUTER@" stroke-width="{O}"/>
+    <rect x="12" y="1.5" width="8" height="8" rx="4" fill="@OUTER@" stroke="@INNER@" stroke-width="{I}"/>
+    <rect x="10.5" y="9.5" width="11" height="3" rx="1" fill="@FILL@" stroke="@INNER@" stroke-width="{I}"/>
+    <path d="M13.5 12.5 H18.5 V23 L16 29 L13.5 23 Z" fill="@FILL@" stroke="@INNER@" stroke-width="{I}"/>
+  </g>
+</svg>

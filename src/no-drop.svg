@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- arrow plus a red circle-slash badge on a white disc (red in every theme) -->
+  <path d="M4 3 L4 25 L9.5 20 L13 28 L16.5 26.5 L13 18.5 L20.5 18.5 Z"
+        fill="none" stroke="@OUTER@" stroke-width="{O}" stroke-linejoin="round"/>
+  <path d="M4 3 L4 25 L9.5 20 L13 28 L16.5 26.5 L13 18.5 L20.5 18.5 Z"
+        fill="@FILL@" stroke="@INNER@" stroke-width="{I}" stroke-linejoin="round"/>
+  <circle cx="23" cy="23" r="7" fill="#ffffff" stroke="#000000" stroke-width="{O}"/>
+  <circle cx="23" cy="23" r="7" fill="#ffffff"/>
+  <g fill="none" stroke="#ff2a2a" stroke-width="2.5" stroke-linecap="round">
+    <circle cx="23" cy="23" r="4.5"/>
+    <path d="M19.8 26.2 L26.2 19.8"/>
+  </g>
+</svg>

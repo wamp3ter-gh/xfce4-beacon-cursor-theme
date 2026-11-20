@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- thick plus (spreadsheet cell) -->
+  <path d="M13 4 H19 V13 H28 V19 H19 V28 H13 V19 H4 V13 H13 Z"
+        fill="none" stroke="@OUTER@" stroke-width="{O}" stroke-linejoin="round"/>
+  <path d="M13 4 H19 V13 H28 V19 H19 V28 H13 V19 H4 V13 H13 Z"
+        fill="@FILL@" stroke="@INNER@" stroke-width="{I}" stroke-linejoin="round"/>
+</svg>

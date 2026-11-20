@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- diagonal arrow pointing into a corner bracket; drawn for nw-resize, rotated by @ROT@ for ne, se, sw.
+       Layers: every part's @OUTER@ first, then @INNER@, then @FILL@. -->
+  <g transform="rotate(@ROT@ 16 16)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 14 V4 H14" fill="none" stroke="@OUTER@" stroke-width="{3+O}"/>
+    <path transform="rotate(-45 16 16)" d="M16 7 L23 14 H19 V27 H13 V14 H9 Z" fill="@OUTER@" stroke="@OUTER@" stroke-width="{O}"/>
+    <path d="M4 14 V4 H14" fill="none" stroke="@INNER@" stroke-width="{3+I}"/>
+    <path transform="rotate(-45 16 16)" d="M16 7 L23 14 H19 V27 H13 V14 H9 Z" fill="@INNER@" stroke="@INNER@" stroke-width="{I}"/>
+    <path d="M4 14 V4 H14" fill="none" stroke="@FILL@" stroke-width="3"/>
+    <path transform="rotate(-45 16 16)" d="M16 7 L23 14 H19 V27 H13 V14 H9 Z" fill="@FILL@"/>
+  </g>
+</svg>

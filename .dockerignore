@@ -1,0 +1,7 @@
+# kept out of the docker build context: outputs and history the build does not read
+build/
+build.new/
+build.test/
+dist/
+.git/
+screenshots/

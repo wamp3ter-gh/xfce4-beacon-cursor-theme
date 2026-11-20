@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- T: a bar with a stem; drawn for top_tee, rotated by @ROT@ for right, bottom, left.
+       Line art: @OUTER@ and @INNER@ rings around a @FILL@ stroke 3 wide. -->
+  <g transform="rotate(@ROT@ 16 16)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 5 H26 M16 5 V27" stroke="@OUTER@" stroke-width="{3+O}"/>
+    <path d="M6 5 H26 M16 5 V27" stroke="@INNER@" stroke-width="{3+I}"/>
+    <path d="M6 5 H26 M16 5 V27" stroke="@FILL@" stroke-width="3"/>
+  </g>
+</svg>

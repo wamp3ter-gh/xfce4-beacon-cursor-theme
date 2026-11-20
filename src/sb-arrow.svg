@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- single arrow, no bar; drawn for sb_up_arrow (and Qt's up_arrow), rotated by @ROT@
+       for right, down, left. Hotspot at the tip. -->
+  <g transform="rotate(@ROT@ 16 16)" stroke-linejoin="round">
+    <path d="M16 3 L25 12.5 H19.5 V29 H12.5 V12.5 H7 Z" fill="none" stroke="@OUTER@" stroke-width="{O}"/>
+    <path d="M16 3 L25 12.5 H19.5 V29 H12.5 V12.5 H7 Z" fill="@FILL@" stroke="@INNER@" stroke-width="{I}"/>
+  </g>
+</svg>

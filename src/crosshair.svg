@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- scope: ring plus four ticks, hollow centre so the target pixel stays visible.
+       Line art: @OUTER@ and @INNER@ rings around a @FILL@ stroke 3 wide. -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M16 3 V9 M16 23 V29 M3 16 H9 M23 16 H29" stroke="@OUTER@" stroke-width="{3+O}"/>
+    <circle cx="16" cy="16" r="7" stroke="@OUTER@" stroke-width="{3+O}"/>
+    <path d="M16 3 V9 M16 23 V29 M3 16 H9 M23 16 H29" stroke="@INNER@" stroke-width="{3+I}"/>
+    <circle cx="16" cy="16" r="7" stroke="@INNER@" stroke-width="{3+I}"/>
+    <path d="M16 3 V9 M16 23 V29 M3 16 H9 M23 16 H29" stroke="@FILL@" stroke-width="3"/>
+    <circle cx="16" cy="16" r="7" stroke="@FILL@" stroke-width="3"/>
+  </g>
+</svg>

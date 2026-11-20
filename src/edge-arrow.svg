@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+  <!-- SPDX-FileCopyrightText: 2026 Wampeter Foma -->
+  <!-- arrow pointing at an edge bar, with a clear gap between them; drawn for n-resize,
+       rotated by @ROT@ for e, s, w. Each part is drawn whole (rings, then fill). -->
+  <g transform="rotate(@ROT@ 16 16)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 4 H24" fill="none" stroke="@OUTER@" stroke-width="{3+O}"/>
+    <path d="M8 4 H24" fill="none" stroke="@INNER@" stroke-width="{3+I}"/>
+    <path d="M8 4 H24" fill="none" stroke="@FILL@" stroke-width="3"/>
+    <path d="M16 10.5 L23 17.5 H19 V29 H13 V17.5 H9 Z" fill="none" stroke="@OUTER@" stroke-width="{O}"/>
+    <path d="M16 10.5 L23 17.5 H19 V29 H13 V17.5 H9 Z" fill="@FILL@" stroke="@INNER@" stroke-width="{I}"/>
+  </g>
+</svg>
