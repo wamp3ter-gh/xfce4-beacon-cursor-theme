@@ -231,13 +231,16 @@ Conventions every source follows:
 
 ## Make a release
 
-1. In `CHANGELOG.md`, rename `Unreleased` to the new version and date, and add a
-   new, empty `Unreleased` section above it.
-2. Commit, tag the commit `v<version>` (for example `v1.0.0`), and push the tag.
+1. Tag the commit with the release notes as the tag message:
+   `git tag -a v1.0.0 -m "<release notes>"`.
+2. Push the tag: `git push origin v1.0.0`.
 3. CI then:
+   - stops if the tag has no message;
    - builds the archive with `./dist.sh`;
    - uploads it to the project's package registry;
-   - creates the release, with that version's CHANGELOG section as its notes.
+   - creates the release, with the tag message as its notes.
+
+The Releases page is the changelog.
 
 Every push also runs CI's check job: shellcheck, a full build, then
 `./test.sh build`.
@@ -378,7 +381,7 @@ The `SHAPES` table in `build.sh` lists every name and alias.
     starting.
 
 - `./dist.sh`: builds, then packs a release archive.
-  - Packs the built themes, `install.sh`, README, CHANGELOG and both licences.
+  - Packs the built themes, `install.sh`, README and both licences.
   - Writes `dist/xfce4-beacon-cursor-theme.tar.gz`.
   - Unpacked, its `install.sh` works as in the repository.
 
