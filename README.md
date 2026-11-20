@@ -1,5 +1,8 @@
 # xfce4-beacon-cursor-theme
 
+[![pipeline](https://gitlab.com/wamp3ter/xfce4-beacon-cursor-theme/badges/main/pipeline.svg)](https://gitlab.com/wamp3ter/xfce4-beacon-cursor-theme/-/pipelines)
+[![release](https://gitlab.com/wamp3ter/xfce4-beacon-cursor-theme/-/badges/release.svg)](https://gitlab.com/wamp3ter/xfce4-beacon-cursor-theme/-/releases)
+
 High-visibility X11 cursor themes:
 - each cursor is a saturated fill inside a black border;
 - legible on both dark and light backgrounds.
