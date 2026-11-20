@@ -44,6 +44,21 @@ Contents:
 
 ## Quick start
 
+Install the latest release, with nothing to build:
+
+```
+curl -fsSLO https://gitlab.com/wamp3ter/xfce4-beacon-cursor-theme/-/raw/main/install.sh
+sh install.sh
+```
+
+- `install.sh` on its own downloads the latest release and installs every theme
+  into `~/.icons`.
+- It switches Xfce to `beacon-yellow`; pick another theme or size the same way as
+  below.
+- Needs `curl` and `tar`.
+
+Or build from the repository:
+
 ```
 git clone https://gitlab.com/wamp3ter/xfce4-beacon-cursor-theme.git
 cd xfce4-beacon-cursor-theme
@@ -242,8 +257,8 @@ Conventions every source follows:
 
 The Releases page is the changelog.
 
-Every push also runs CI's check job: shellcheck, a full build, then
-`./test.sh build`.
+Every push also runs CI's check job: shellcheck, a full build and archive,
+`./test.sh build`, then `./test-install.sh`.
 
 To pack an archive locally: `./dist.sh`, which writes
 `dist/xfce4-beacon-cursor-theme.tar.gz`.
@@ -361,14 +376,22 @@ The `SHAPES` table in `build.sh` lists every name and alias.
   - Builds into `build.new/` and replaces `build/` only when every theme built,
     so a failed build leaves the previous one in place.
 
-- `./install.sh`: copies every built theme into `~/.icons` and switches Xfce to one.
+- `./install.sh`: copies every theme into `~/.icons` and switches Xfce to one.
   - `~/.icons` is the only per-user directory libXcursor searches (libXcursor 1.2
     checked).
+  - Where the themes come from:
+    - `build/` next to the script: a repository after `./build.sh`, or an
+      unpacked release;
+    - a repository without `build/`: it stops and asks for `./build.sh`;
+    - the script on its own: it downloads the latest release into a temporary
+      folder, installs from it, and removes the folder;
+    - it never builds.
   - `BEACON_THEME`: theme to switch to; default `beacon-yellow`.
   - `BEACON_SIZE`: cursor size; default `48`.
-  - Checks everything before changing anything: `BEACON_THEME` must be in
-    `build/`, `BEACON_SIZE` must be a number, and no destination may be a
-    same-named folder that `build.sh` did not create.
+  - `BEACON_URL`: another release archive to download.
+  - Checks everything before changing anything: `BEACON_THEME` must be among the
+    themes being installed, `BEACON_SIZE` must be a number, and no destination
+    may be a same-named folder that `build.sh` did not create.
   - Copies each theme beside the old one, then swaps it in, so a failed copy
     leaves the old theme in place.
 
@@ -391,6 +414,17 @@ The `SHAPES` table in `build.sh` lists every name and alias.
     leaving `build/` alone; needs Docker.
   - `dir`: checks the themes already built there, for example `./test.sh build`;
     no Docker.
+
+- `./test-install.sh`: tests `install.sh` in every mode, without touching your
+  desktop.
+  - Run `./dist.sh` first; it tests against `build/` and the local archive.
+  - Each case gets a throwaway HOME, and a stub `xfconf-query` that only records
+    its arguments.
+  - Downloads come from the local archive (`file://`), never the network.
+  - Cases: repo with and without `build/`, the script on its own, a bad URL,
+    `BEACON_THEME` and `BEACON_SIZE`, a same-named folder that is not a Beacon
+    theme, `--uninstall`.
+  - CI runs it on every push.
 
 ## Borders
 

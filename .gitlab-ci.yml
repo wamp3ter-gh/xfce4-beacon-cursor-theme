@@ -4,7 +4,8 @@
 # CI for xfce4-beacon-cursor-theme.
 #
 # Jobs:
-#   - check: every pipeline; shellcheck, a full build, then every cursor name checked
+#   - check: every pipeline; shellcheck, a full build and archive, every cursor name
+#     checked, then the install tests
 #   - package: tags v<X.Y.Z> only; builds the archive and uploads it
 #   - release: tags v<X.Y.Z> only; creates the GitLab release
 #
@@ -35,11 +36,12 @@ check:
   image: debian:stable-slim
   before_script:
     - apt-get update
-    - apt-get install -y --no-install-recommends librsvg2-bin x11-apps shellcheck
+    - apt-get install -y --no-install-recommends librsvg2-bin x11-apps shellcheck curl
   script:
     - shellcheck --severity=error ./*.sh
-    - ./build.sh
+    - ./dist.sh
     - ./test.sh build
+    - ./test-install.sh
 
 package:
   stage: package
