@@ -43,6 +43,7 @@ Contents:
   - [Borders](#borders)
   - [Hotspots](#hotspots)
   - [Colour vision](#colour-vision)
+- [Troubleshooting](#troubleshooting)
 - [Licence](#licence)
 
 ## Quick start
@@ -72,7 +73,7 @@ cd xfce4-beacon-cursor-theme
 - `./build.sh` builds every theme into `build/`.
 - `./install.sh` copies them into `~/.icons` and switches Xfce to `beacon-yellow`.
 - Another theme or size: `BEACON_THEME=beacon-cyan BEACON_SIZE=40 ./install.sh`.
-- Missing a build tool? See [Install](#install), or build in a container.
+- Missing a build tool? See [Troubleshooting](#troubleshooting).
 
 ## Themes
 
@@ -128,8 +129,7 @@ rm -rf build && docker build -o build .
 ./install.sh
 ```
 
-- Remove `build/` first: `docker build` adds to it instead of replacing it, so
-  themes you have since removed would stay behind.
+- Remove `build/` first. See [Troubleshooting](#troubleshooting).
 - Border widths: `--build-arg BORDER_IN=0.75 --build-arg BORDER_OUT=0.75`.
 
 ### System-wide
@@ -230,7 +230,7 @@ Conventions every source follows:
     XCURSOR_THEME=beacon-orange XCURSOR_SIZE=64 xterm
   ```
 
-  Without `XCURSOR_PATH`, `XCURSOR_THEME` only finds installed themes.
+  Keep `XCURSOR_PATH`. See [Troubleshooting](#troubleshooting).
 - **The whole desktop:** `BEACON_THEME=beacon-orange ./install.sh`.
 - **Every cursor name present:** `./test.sh` (see [Scripts](#scripts)).
 
@@ -459,6 +459,25 @@ Results:
   affects choosing between them.
 - **Red cursors:** `not-allowed` and `no-drop` appear olive with red-green colour
   blindness; their circle-slash shape still identifies them.
+
+## Troubleshooting
+
+### Removed themes are still in `build/` after a container build
+
+- Cause: `docker build -o build` adds to `build/` instead of replacing it.
+- Fix: `rm -rf build` before `docker build`.
+
+### `build.sh` stops and lists missing tools
+
+- Cause: a build tool is not installed.
+- Fix: install it (see [Requirements](#requirements)), or
+  [build in a container](#build-in-a-container).
+
+### `XCURSOR_THEME` has no effect when testing a build
+
+- Cause: without `XCURSOR_PATH`, `XCURSOR_THEME` finds only installed themes.
+- Fix: put the build folder in `XCURSOR_PATH`, as in
+  [Check a change](#check-a-change).
 
 ## Licence
 
